@@ -37,27 +37,27 @@
 ~~~
 
 ### Cargar todos los Plugins
-~~~
-void DkPluginManager::loadPlugins()
+~~~cpp
+void DkPluginManager::loadPlugins();
 ~~~
 
 ### Cargar un plugin desde un archivo
-~~~
-bool DkPluginManager::singlePluginLoad(const QString& filePath)
+~~~cpp
+bool DkPluginManager::singlePluginLoad(const QString& filePath);
 ~~~
 
 ### singlePluginLoad Instancia DkPluginContainer
-~~~
-DkPluginContainer::DkPluginContainer(const QString& pluginPath)
+~~~cpp
+DkPluginContainer::DkPluginContainer(const QString& pluginPath);
 ~~~
 
 ### DkPluginContainer llama a loadJson
-~~~
-void DkPluginContainer::loadJson()
+~~~cpp
+void DkPluginContainer::loadJson();
 ~~~
 
 ### Ejemplo del json del plugin
-~~~
+~~~json
 {
     "PluginName" 	: "User Friendly Plugin Name",
 	"Tagline" 	: "Tagline - what does your plugin do?.",
@@ -72,6 +72,11 @@ void DkPluginContainer::loadJson()
 ~~~
 
 ### loadJson llama a loadMetaData
+~~~cpp
+void DkPluginContainer::loadMetaData(const QJsonValue& val);
 ~~~
-void DkPluginContainer::loadMetaData(const QJsonValue& val)
+
+### Volviendo a singlePluginLoad este hace el plugin->Load()
+~~~cpp
+bool DkPluginContainer::load();
 ~~~
