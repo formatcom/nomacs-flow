@@ -3,7 +3,7 @@
 - REF: https://doc.qt.io/qt-5/qpluginloader.html
 
 
-###PluginManager codigo fuente
+### PluginManager codigo fuente
 ~~~
 - ImageLounge/src/DkCore/DkPluginManager.cpp
 ~~~
