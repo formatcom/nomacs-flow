@@ -7,8 +7,27 @@
 - ImageLounge/src/DkCore/DkPluginManager.cpp
 ~~~
 
+### Cargar todos los Plugins
+~~~
+void DkPluginManager::loadPlugins()
+~~~
 
-### Primero busca el json del plugin
+### Cargar un plugin desde un archivo
+~~~
+bool DkPluginManager::singlePluginLoad(const QString& filePath)
+~~~
+
+### singlePluginLoad Instancia DkPluginContainer
+~~~
+DkPluginContainer::DkPluginContainer(const QString& pluginPath)
+~~~
+
+### DkPluginContainer llama a loadJson
+~~~
+void DkPluginContainer::loadJson()
+~~~
+
+### Ejemplo del json del plugin
 ~~~
 {
     "PluginName" 	: "User Friendly Plugin Name",
@@ -22,12 +41,3 @@
 	"Version"	: "0.1.0"
 }
 ~~~
-
-
-
-
-### Plugin Load
-~~~
-bool DkPluginContainer::load()
-~~~
-
