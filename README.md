@@ -15,25 +15,25 @@
 ~~~
 
 ~~~cpp
-- DkPluginInterface
-	- virtual QImage image()
-	- virtual QList<QAction*> createActions(QWidget*)
-	- virtual QList<QAction*> pluginActions() const
-	- virtual bool closesOnImageChange() const
-	- virtual QSharedPointer<DkImageContainer> runPlugin(...)
+- class DkPluginInterface
+	- virtual QImage image();
+	- virtual QList<QAction*> createActions(QWidget*);
+	- virtual QList<QAction*> pluginActions() const;
+	- virtual bool closesOnImageChange() const;
+	- virtual QSharedPointer<DkImageContainer> runPlugin(...);
 	
-- DkBatchPluginInterface : public DkPluginInterface
-	- virtual void preLoadPlugin() const
-	- virtual void postLoadPlugin(...)
-	- virtual QString name()
-	- virtual void loadSettings(QSettings&)
-	- virtual void saveSettings(QSettings&) const
+- class DkBatchPluginInterface : public DkPluginInterface
+	- virtual void preLoadPlugin() const;
+	- virtual void postLoadPlugin(...);
+	- virtual QString name();
+	- virtual void loadSettings(QSettings&);
+	- virtual void saveSettings(QSettings&) const;
 
-- DkViewPortInterface : public DkPluginInterface
-	- virtual bool hideHUD() const	
-	- virtual bool createViewPort(QWidget* parent)
-	- virtual DkPluginViewPort* getViewPort()
-	- virtual void setVisible(bool visible)	
+- class DkViewPortInterface : public DkPluginInterface;
+	- virtual bool hideHUD() const;
+	- virtual bool createViewPort(QWidget* parent);
+	- virtual DkPluginViewPort* getViewPort();
+	- virtual void setVisible(bool visible);
 ~~~
 
 ### Cargar todos los Plugins
