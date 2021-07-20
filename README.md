@@ -1,10 +1,14 @@
 - REF: https://github.com/nomacs/nomacs-plugins/tree/3cd6e61130a6ad4ef722d082f9e9cf0016b68fa0/SIMPLE_PLUGIN
+- REF: https://doc.qt.io/qt-5/qpluginloader.html
 
 
+### Archivo del manager de los plugins
 ~~~
-- Primero busca el json del plugin
+- ImageLounge/src/DkCore/DkPluginManager.cpp
 ~~~
 
+
+### Primero busca el json del plugin
 ~~~
 {
     "PluginName" 	: "User Friendly Plugin Name",
@@ -19,9 +23,8 @@
 }
 ~~~
 
-~~~
-- ImageLounge/src/DkCore/DkPluginManager.cpp
-~~~
+
+
 
 ### Plugin Load
 ~~~
