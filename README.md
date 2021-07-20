@@ -14,7 +14,7 @@
 - ImageLounge/src/DkCore/DkPluginInterface.h
 ~~~
 
-~~~
+~~~cpp
 - DkPluginInterface
 	- virtual QImage image()
 	- virtual QList<QAction*> createActions(QWidget*)
