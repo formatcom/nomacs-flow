@@ -1,3 +1,4 @@
+- REF: https://github.com/nomacs/nomacs/tree/master/ImageLounge/src
 - REF: https://github.com/nomacs/nomacs-plugins/tree/3cd6e61130a6ad4ef722d082f9e9cf0016b68fa0/SIMPLE_PLUGIN
 - REF: https://doc.qt.io/qt-5/qpluginloader.html
 
